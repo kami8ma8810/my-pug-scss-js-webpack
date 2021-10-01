@@ -1,0 +1,28 @@
+extends ../_assets/template/_page
+
+block append config
+	- var type = 'works';
+	- var name = 'works';
+	- var page = pagelist[name];
+	- var cssPath = paths.css
+	- var imgPath = paths.img
+	- var jsPath = paths.js
+
+block append head
+	link(rel="stylesheet" href=cssPath+"pages/works/style.css")
+
+block content
+
+	// main
+	main.main._page.works
+		p works 下層ページです。
+		ul.works-items
+			li.works-item 下層リスト
+			li.works-item 下層リスト
+			li.works-item 下層リスト
+			li.works-item 下層リスト
+			li.works-item 下層リスト
+	// / main
+
+block append script
+	script(src=jsPath+"works.js")

@@ -1,0 +1,52 @@
+:root {
+  --site-white: #fff;
+  --site-black: #000;
+  --site-gray: #333;
+  --site-transition-duration: .3s;
+  --site-transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+  --site-transition-delay: .5s;
+}
+
+.about {
+  width: 500px;
+  min-height: 500vh;
+  font-size: 0.875rem;
+}
+.about__element {
+  width: 300px;
+}
+.about--modifier .about__element {
+  color: red;
+}
+.about--modifier .about__element {
+  color: red;
+}
+
+.about-items {
+  font-size: 2.6666666667vw;
+  line-height: 1.81;
+}
+
+.about-item {
+  opacity: 1;
+  transition: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+}
+.about-item:hover {
+  opacity: 0.5;
+}
+@media screen and (min-width: 374px) {
+  .about {
+    padding: 1.5rem;
+  }
+}
+@media print, screen and (min-width: 768px) {
+  .about {
+    width: 100px;
+    font-size: 1.25rem;
+  }
+}
+@media print, screen and (min-width: 768px) and (max-width: 1200px) {
+  .about__element {
+    width: 200px;
+  }
+}
