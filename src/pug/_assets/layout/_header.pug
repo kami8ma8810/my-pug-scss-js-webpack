@@ -1,4 +1,5 @@
 include ../components/_logo
+include ../components/_headerNav
 
 mixin header(page, paths)
 
@@ -6,4 +7,5 @@ mixin header(page, paths)
 	header.header
 		p ヘッダーです。
 		+logo(page, paths, '_header')
+		+headerNav(page,paths,'_header')
 	// /header

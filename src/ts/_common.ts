@@ -1,23 +1,23 @@
-const resize = (): void => {
+const consoleResize = (): void => {
   console.log('common resize done!');
 };
-const scroll = (): void => {
+const consoleScroll = (): void => {
   console.log('common scroll done!');
 };
 
 export default {
   init: (): void => {
     console.log('common init');
-    window.addEventListener('resize', resize);
-    window.addEventListener('scroll', scroll);
+    window.addEventListener('resize', consoleResize);
+    window.addEventListener('scroll', consoleScroll);
     // resize()
     // scroll()
     console.log('common.tsを読み込んでいます');
   },
   resize: (): void => {
-    resize();
+    consoleResize();
   },
   scroll: (): void => {
-    scroll();
+    consoleScroll();
   },
 };
